@@ -1,0 +1,14 @@
+<h4>Edit an Existing User</h4>
+<%= form_for @user do |f| %>
+<br><br>
+<%= label(:user, :email, "Email:") %>
+<%= f.text_field :email %>
+<br><br>
+<%= label(:user, :username, "Username:") %>
+<%= f.text_field :username %>
+<br><br>
+<%= label(:user, :password, "Password:") %>
+<%= f.password_field :password %>
+<br><br>
+<%= f.submit "Submit" %>
+<% end %>
