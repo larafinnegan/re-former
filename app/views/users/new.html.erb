@@ -1,15 +1,6 @@
-<%= form_for @user do |f| %>
-<%= label(:user, :email, "Email:") %>
-<%= f.text_field :email %>
-<br><br>
-<%= label(:user, :username, "Username:") %>
-<%= f.text_field :username %>
-<br><br>
-<%= label(:user, :password, "Password:") %>
-<%= f.password_field :password %>
-<br><br>
-<%= f.submit "Submit" %>
-<% end %>
+<h4>Create a New User</h4>
+<%= render "form" %>
+
 
 
 <% if false %>
